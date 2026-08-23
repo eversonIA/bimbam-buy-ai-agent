@@ -1,0 +1,40 @@
+{
+  "documents": {
+    "FAQ Métodos de Pagamento - BimBam Buy (PT-BR).pdf": {
+      "title": "FAQ de Métodos de Pagamento",
+      "category": "Pagamentos",
+      "audience": "Atendimento e Operações",
+      "language": "pt-BR",
+      "version": "não informada"
+    },
+    "Guia de Envios - BimBam Buy (PT-BR).pdf": {
+      "title": "Guia de Envios",
+      "category": "Logística",
+      "audience": "Atendimento e Operações",
+      "language": "pt-BR",
+      "version": "não informada"
+    },
+    "Manual de Garantia - BimBam Buy (PT-BR).pdf": {
+      "title": "Manual de Garantia",
+      "category": "Garantia",
+      "audience": "Atendimento e Operações",
+      "language": "pt-BR",
+      "version": "não informada"
+    },
+    "Política de Reembolsos e Devoluções - BimBam Buy (PT-BR).pdf": {
+      "title": "Política de Reembolsos e Devoluções",
+      "category": "Pós-venda",
+      "audience": "Atendimento e Operações",
+      "language": "pt-BR",
+      "version": "não informada"
+    },
+    "Programa de Afiliados - BimBam Buy (PT-BR).pdf": {
+      "title": "Programa de Afiliados",
+      "category": "Afiliados",
+      "audience": "Atendimento e Operações",
+      "language": "pt-BR",
+      "version": "não informada"
+    }
+  }
+}
+
