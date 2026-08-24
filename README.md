@@ -10,8 +10,9 @@ documentos e responder com fontes rastreáveis.
 [![Streamlit](https://img.shields.io/badge/Streamlit-app-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Licença](https://img.shields.io/badge/licen%C3%A7a-MIT-green.svg)](LICENSE)
 
-> **Deploy:** a URL pública e a captura da aplicação serão adicionadas após a
-> publicação no Streamlit Community Cloud.
+> **Aplicação pública:** [bimbam-buy-ai-agent.streamlit.app](https://bimbam-buy-ai-agent.streamlit.app)
+
+[![BimBam Buy AI Agent em execução no Streamlit](docs/images/deploy-streamlit.png)](https://bimbam-buy-ai-agent.streamlit.app)
 
 ## O problema
 
@@ -227,9 +228,9 @@ decisão fundamentada de usar Streamlit está registrada em [docs/DECISIONS.md](
 - [x] arquitetura e tecnologias documentadas;
 - [x] agente validado localmente;
 - [x] testes e avaliação aprovados;
-- [ ] repositório público com histórico de commits;
-- [ ] URL pública funcionando;
-- [ ] captura de tela do deploy no README;
+- [x] repositório público com histórico de commits;
+- [x] URL pública funcionando;
+- [x] captura de tela do deploy no README;
 - [x] exemplos reais de perguntas e respostas revisados.
 
 ## Autor

@@ -24,13 +24,13 @@ Este backlog transforma o exemplo do challenge em itens verificáveis para a ent
 - [x] Executar validação local completa: 48 testes, 87% de cobertura e avaliação 11/11.
 - [x] Finalizar README com exemplos reais e arquitetura.
 
-## Aguardando publicação
+## Publicação
 
-- [ ] Criar o repositório público `eversonIA/bimbam-buy-ai-agent`.
-- [ ] Cadastrar `GEMINI_API_KEY` nos segredos do deploy.
-- [ ] Publicar no Streamlit Community Cloud.
-- [ ] Testar a URL pública e capturar evidência visual.
-- [ ] Inserir a imagem e a URL pública no README.
+- [x] Criar o repositório público `eversonIA/bimbam-buy-ai-agent`.
+- [x] Cadastrar `GEMINI_API_KEY` nos segredos do deploy.
+- [x] Publicar no Streamlit Community Cloud.
+- [x] Testar a URL pública e capturar evidência visual.
+- [x] Inserir a imagem e a URL pública no README.
 - [ ] Conferir o checklist de entrega e enviar o link na Alura.
 
 ## Fora do escopo do MVP
