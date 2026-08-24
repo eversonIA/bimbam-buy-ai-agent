@@ -78,9 +78,9 @@ credenciais e infraestrutura adicionais sem mudar o princípio técnico do RAG.
 | Política de Reembolsos e Devoluções | Pós-venda |
 | Programa de Afiliados | Afiliados |
 
-Os arquivos são fictícios e foram fornecidos pelo Challenge Alura Agentes. O
-manifesto em `data/manifest.json` acrescenta categoria, público e versão declarada a
-cada documento.
+A base utiliza documentos fictícios do Challenge Alura Agentes. O manifesto em
+`data/manifest.json` acrescenta categoria, público e versão declarada a cada
+documento.
 
 ## Como executar
 
@@ -198,7 +198,7 @@ Nunca faça commit de `.env` ou `.streamlit/secrets.toml`. Consulte [SECURITY.md
 │   ├── documents/          # base documental
 │   └── manifest.json       # metadados da base
 ├── docs/
-│   ├── challenge/          # materiais originais do challenge
+│   ├── challenge/          # referências do challenge
 │   ├── BACKLOG.md          # acompanhamento da entrega
 │   └── DECISIONS.md        # decisões e justificativas
 ├── evals/                  # perguntas de avaliação
@@ -215,12 +215,11 @@ Nunca faça commit de `.env` ou `.streamlit/secrets.toml`. Consulte [SECURITY.md
 - OCR de documentos escaneados não faz parte deste MVP;
 - a qualidade generativa e os limites de uso dependem da API configurada.
 
-## Decisões do challenge
+## Decisão de deploy
 
-Os requisitos formais aceitam OCI ou outra plataforma com URL pública. O backlog de
-exemplo contém uma afirmação isolada sobre OCI obrigatório, mas também se declara
-sugestivo e posteriormente diz que as tecnologias citadas não são obrigatórias. A
-decisão fundamentada de usar Streamlit está registrada em [docs/DECISIONS.md](docs/DECISIONS.md).
+O challenge sugere a OCI ou outro serviço de nuvem que disponibilize uma URL pública.
+Neste projeto, foi escolhido o Streamlit Community Cloud pela integração direta com a
+aplicação. A decisão está registrada em [docs/DECISIONS.md](docs/DECISIONS.md).
 
 ## Checklist de entrega
 

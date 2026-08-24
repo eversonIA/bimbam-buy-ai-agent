@@ -1,6 +1,6 @@
 # Backlog do projeto
 
-Este backlog transforma o exemplo do challenge em itens verificáveis para a entrega.
+Este backlog organiza os itens verificáveis para a entrega do projeto.
 
 ## Concluído
 
@@ -8,8 +8,8 @@ Este backlog transforma o exemplo do challenge em itens verificáveis para a ent
 - [x] Identificar requisitos obrigatórios e opcionais.
 - [x] Definir o público como Atendimento e Operações.
 - [x] Escolher Python, Streamlit, Gemini e deploy no Streamlit Community Cloud.
-- [x] Registrar a decisão sobre a inconsistência de OCI.
-- [x] Criar o repositório Git local e organizar os materiais fornecidos.
+- [x] Registrar a escolha do serviço de deploy em nuvem.
+- [x] Criar o repositório Git local e organizar a base documental.
 - [x] Implementar extração e limpeza dos documentos.
 - [x] Implementar chunking com metadados e identificadores determinísticos.
 - [x] Implementar embeddings, índice vetorial e recuperação híbrida.
@@ -37,7 +37,7 @@ Este backlog transforma o exemplo do challenge em itens verificáveis para a ent
 
 - Integrações com pedidos, pagamentos, transportadoras ou CRM reais.
 - Drive, SharePoint, Slack, Teams, OCR e sincronização automática.
-- Banco vetorial externo, Kubernetes ou infraestrutura OCI dedicada.
+- Banco vetorial externo, Kubernetes ou infraestrutura de nuvem dedicada.
 - Armazenamento de perguntas ou dados pessoais de usuários.
 
 ## Evoluções posteriores

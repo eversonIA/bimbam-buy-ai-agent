@@ -11,7 +11,7 @@
 
 ## Dados
 
-A versão de demonstração usa apenas os documentos fictícios fornecidos no challenge.
+A versão de demonstração usa apenas os documentos fictícios do challenge.
 Ela não deve receber senhas, CVV, número completo de cartão, documentos pessoais,
 comprovantes ou dados reais de clientes.
 
@@ -19,4 +19,3 @@ comprovantes ou dados reais de clientes.
 
 Não abra uma issue pública com um segredo ou dado pessoal. Revogue primeiro a
 credencial afetada e contate o responsável pelo repositório de forma privada.
-

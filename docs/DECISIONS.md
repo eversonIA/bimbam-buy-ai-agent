@@ -7,20 +7,18 @@ Este documento registra as decisões que afetam o escopo e a avaliação do chal
 **Decisão:** posicionar a solução como um assistente interno para as equipes de
 Atendimento e Operações da BimBam Buy.
 
-**Motivo:** o enunciado pede um agente para colaboradores, enquanto a base fornecida
+**Motivo:** o enunciado pede um agente para colaboradores, enquanto a base documental
 contém políticas de e-commerce voltadas ao suporte ao cliente. O agente ajuda o
 colaborador a consultar essas políticas; ele não se apresenta como atendente humano e
 não consulta pedidos reais.
 
 ## ADR-002 - Deploy no Streamlit Community Cloud
 
-**Decisão:** usar o Streamlit Community Cloud em vez da OCI.
+**Decisão:** usar o Streamlit Community Cloud para publicar a aplicação.
 
-**Motivo:** os dois arquivos formais de requisitos aceitam OCI ou outra plataforma com
-URL pública. O backlog é declarado como sugestivo e contém duas orientações
-incompatíveis: uma frase afirma que um serviço OCI seria obrigatório, enquanto outra
-afirma que nenhuma tecnologia citada é obrigatória e aceita outros provedores. A
-alternativa escolhida atende aos critérios objetivos com menor complexidade.
+**Motivo:** o challenge sugere a OCI ou outro serviço de nuvem com URL pública. O
+Streamlit oferece integração direta com a aplicação, gestão segura de segredos e menor
+complexidade operacional para este projeto.
 
 ## ADR-003 - Índice local e recuperação híbrida
 
@@ -46,4 +44,3 @@ fontes. Ausência de informação resulta em uma resposta explícita de insufici
 
 **Motivo:** os documentos não fornecem contatos reais, status de pedidos, tabelas por
 país nem sistemas transacionais. Inventar esses dados prejudicaria a confiabilidade.
-
