@@ -19,7 +19,7 @@ class Settings:
     generation_model: str = "gemini-3.7-flash"
     embedding_model: str = "gemini-embedding-001"
     embedding_dimension: int = 768
-    retrieval_top_k: int = 7
+    retrieval_top_k: int = 5
     retrieval_min_score: float = 0.12
     documents_dir: Path = DEFAULT_DOCUMENTS_DIR
     manifest_path: Path = DEFAULT_MANIFEST_PATH
@@ -31,10 +31,8 @@ class Settings:
         return cls(
             gemini_api_key=api_key,
             generation_model=os.getenv("GEMINI_MODEL", "gemini-3.7-flash"),
-            embedding_model=os.getenv(
-                "GEMINI_EMBEDDING_MODEL", "gemini-embedding-001"
-            ),
+            embedding_model=os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-001"),
             embedding_dimension=int(os.getenv("EMBEDDING_DIMENSION", "768")),
-            retrieval_top_k=int(os.getenv("RETRIEVAL_TOP_K", "7")),
+            retrieval_top_k=int(os.getenv("RETRIEVAL_TOP_K", "5")),
             retrieval_min_score=float(os.getenv("RETRIEVAL_MIN_SCORE", "0.12")),
         )

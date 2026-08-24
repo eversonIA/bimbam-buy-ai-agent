@@ -67,4 +67,3 @@ class AgentAnswer:
     sources: tuple[SearchResult, ...]
     grounded: bool
     mode: str
-
