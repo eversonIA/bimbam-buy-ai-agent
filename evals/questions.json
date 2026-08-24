@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pagamento-metodos",
+    "question": "Quais formas de pagamento são aceitas?",
+    "expected_source": "FAQ Métodos de Pagamento",
+    "expected_terms": [
+      "cartão de crédito",
+      "cartão de débito",
+      "PIX",
+      "Boleto",
+      "carteiras digitais"
+    ]
+  },
+  {
+    "id": "pagamento-boleto",
+    "question": "Quanto tempo um pagamento por boleto pode levar para ser confirmado?",
+    "expected_source": "FAQ Métodos de Pagamento",
+    "expected_terms": ["3 dias úteis"]
+  },
+  {
+    "id": "reembolso-prazo",
+    "question": "Depois da aprovação, em quanto tempo normalmente recebo o reembolso?",
+    "expected_source": "Política de Reembolsos e Devoluções",
+    "expected_terms": ["5", "10", "dias úteis"]
+  },
+  {
+    "id": "dano-transporte",
+    "question": "Recebi um produto danificado no transporte. Qual é o prazo para comunicar?",
+    "expected_source": "Guia de Envios",
+    "expected_terms": ["48 horas"]
+  },
+  {
+    "id": "rastreamento-envio",
+    "question": "Como acompanho o envio do meu pedido?",
+    "expected_source": "Guia de Envios",
+    "expected_terms": ["número do pedido", "e-mail cadastrado", "link de rastreamento"]
+  },
+  {
+    "id": "arrependimento",
+    "question": "Qual é o prazo geral para desistir da compra depois do recebimento?",
+    "expected_source": "Política de Reembolsos e Devoluções",
+    "expected_terms": ["10 dias corridos"]
+  },
+  {
+    "id": "garantia-exclusao",
+    "question": "Dano causado por líquido é coberto pela garantia?",
+    "expected_source": "Manual de Garantia",
+    "expected_terms": ["não", "líquido"]
+  },
+  {
+    "id": "garantia-cobertura",
+    "question": "O que a garantia cobre?",
+    "expected_source": "Manual de Garantia",
+    "expected_terms": ["falha ao ligar", "defeitos de montagem", "problemas de fabricação"]
+  },
+  {
+    "id": "afiliado-cancelamento",
+    "question": "Uma venda cancelada continua gerando comissão para o afiliado?",
+    "expected_source": "Programa de Afiliados",
+    "expected_terms": ["não", "comissão"]
+  },
+  {
+    "id": "fora-escopo-contato",
+    "question": "Qual é o telefone oficial da central de ajuda?",
+    "expected_source": null,
+    "expected_terms": ["não encontrei"]
+  },
+  {
+    "id": "fora-escopo-status",
+    "question": "Qual é o status atual do pedido 12345?",
+    "expected_source": null,
+    "expected_terms": ["não tenho acesso"]
+  }
+]
