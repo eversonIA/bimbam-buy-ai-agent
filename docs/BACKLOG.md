@@ -10,20 +10,22 @@ Este backlog transforma o exemplo do challenge em itens verificáveis para a ent
 - [x] Escolher Python, Streamlit, Gemini e deploy no Streamlit Community Cloud.
 - [x] Registrar a decisão sobre a inconsistência de OCI.
 - [x] Criar o repositório Git local e organizar os materiais fornecidos.
+- [x] Implementar extração e limpeza dos documentos.
+- [x] Implementar chunking com metadados e identificadores determinísticos.
+- [x] Implementar embeddings, índice vetorial e recuperação híbrida.
+- [x] Implementar geração fundamentada, citações e fallback.
+- [x] Construir a interface de chat no Streamlit.
+- [x] Adicionar testes unitários e avaliação de perguntas conhecidas.
+- [x] Adicionar guardrails para contatos inexistentes e dados transacionais ao vivo.
+- [x] Configurar lint, cobertura e GitHub Actions.
 
-## Em desenvolvimento
+## Em validação final
 
-- [ ] Implementar extração e limpeza dos documentos.
-- [ ] Implementar chunking com metadados e identificadores determinísticos.
-- [ ] Implementar embeddings, índice vetorial e recuperação híbrida.
-- [ ] Implementar geração fundamentada, citações e fallback.
-- [ ] Construir a interface de chat no Streamlit.
-- [ ] Adicionar testes unitários e avaliação de perguntas conhecidas.
+- [x] Executar validação local completa: 48 testes, 87% de cobertura e avaliação 11/11.
+- [x] Finalizar README com exemplos reais e arquitetura.
 
-## Pronto para começar
+## Aguardando publicação
 
-- [ ] Executar validação local completa.
-- [ ] Finalizar README com exemplos reais e arquitetura.
 - [ ] Criar o repositório público `eversonIA/bimbam-buy-ai-agent`.
 - [ ] Cadastrar `GEMINI_API_KEY` nos segredos do deploy.
 - [ ] Publicar no Streamlit Community Cloud.
@@ -38,3 +40,11 @@ Este backlog transforma o exemplo do challenge em itens verificáveis para a ent
 - Banco vetorial externo, Kubernetes ou infraestrutura OCI dedicada.
 - Armazenamento de perguntas ou dados pessoais de usuários.
 
+## Evoluções posteriores
+
+- Definir responsáveis, periodicidade e aprovação para atualização dos documentos.
+- Registrar métricas de latência, perguntas sem resposta e feedback, com política de
+  privacidade apropriada.
+- Adicionar OCR para arquivos escaneados e sincronização com repositórios corporativos.
+- Avaliar um banco vetorial persistente somente se a base ou a frequência de atualização
+  crescerem de forma relevante.

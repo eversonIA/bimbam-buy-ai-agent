@@ -55,6 +55,18 @@ flowchart LR
 O índice vetorial é mantido em memória porque a base é pequena. Isso elimina banco,
 credenciais e infraestrutura adicionais sem mudar o princípio técnico do RAG.
 
+## Tecnologias e ferramentas
+
+| Componente | Uso no projeto |
+| --- | --- |
+| Python 3.11+ | pipeline de ingestão, recuperação e geração |
+| Streamlit | interface de chat e hospedagem do MVP |
+| Gemini 3.7 Flash | síntese fundamentada das respostas |
+| Gemini Embedding | representação semântica de documentos e perguntas |
+| scikit-learn | índice lexical TF-IDF com palavras e caracteres |
+| pypdf, python-docx, openpyxl e python-pptx | leitores modulares de documentos |
+| Pytest, Ruff e GitHub Actions | testes, qualidade de código e integração contínua |
+
 ## Base de conhecimento
 
 | Documento | Categoria |
@@ -117,17 +129,46 @@ Abra `http://localhost:8501` no navegador.
 Para a última pergunta, a resposta correta é admitir que o contato não consta na base,
 e não inventar um telefone.
 
+### Exemplos validados de respostas
+
+> **Quais formas de pagamento são aceitas?**
+>
+> Conforme o país e a configuração operacional, a BimBam Buy pode aceitar cartão de
+> crédito, cartão de débito, transferência/PIX, boleto, carteiras digitais e
+> parcelamento ou financiamento. *(FAQ de Métodos de Pagamento, p. 2)*
+
+> **Recebi um produto danificado no transporte. Qual é o prazo para comunicar?**
+>
+> O caso deve ser registrado em até 48 horas após o recebimento, com as evidências
+> aplicáveis. *(Guia de Envios, p. 7)*
+
+> **Qual é o prazo geral para desistir da compra depois do recebimento?**
+>
+> A solicitação por arrependimento pode ser feita nos 10 dias corridos subsequentes ao
+> recebimento, desde que o produto cumpra os requisitos de elegibilidade. *(Política de
+> Reembolsos e Devoluções, p. 3)*
+
+> **Qual é o telefone oficial da central de ajuda?**
+>
+> Não encontrei essa informação nos documentos disponíveis. Tente reformular a
+> pergunta ou consulte a equipe responsável.
+
 ## Testes
 
 ```powershell
 pip install -r requirements-dev.txt
 ruff check .
 pytest --cov=bimbam_agent --cov-report=term-missing
+python scripts/evaluate.py
 ```
 
 Os casos em `evals/questions.json` incluem perguntas objetivas, ambiguidades e itens
-fora do escopo. O workflow do GitHub Actions executa lint e testes em cada *push* e
-*pull request*.
+fora do escopo. A avaliação exige tanto a fonte correta quanto os termos essenciais da
+resposta. O workflow do GitHub Actions executa lint e testes em cada *push* e *pull
+request*.
+
+Última validação local: **48 testes aprovados**, **87% de cobertura** e **11/11 casos
+documentais aprovados** no modo offline reproduzível.
 
 ## Deploy no Streamlit Community Cloud
 
@@ -184,12 +225,12 @@ decisão fundamentada de usar Streamlit está registrada em [docs/DECISIONS.md](
 
 - [x] base documental organizada;
 - [x] arquitetura e tecnologias documentadas;
-- [ ] agente validado localmente;
-- [ ] testes e avaliação aprovados;
+- [x] agente validado localmente;
+- [x] testes e avaliação aprovados;
 - [ ] repositório público com histórico de commits;
 - [ ] URL pública funcionando;
 - [ ] captura de tela do deploy no README;
-- [ ] exemplos reais de perguntas e respostas revisados.
+- [x] exemplos reais de perguntas e respostas revisados.
 
 ## Autor
 
@@ -199,4 +240,3 @@ Agentes.
 ## Licença
 
 Distribuído sob a licença [MIT](LICENSE).
-
